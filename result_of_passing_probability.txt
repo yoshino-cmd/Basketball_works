@@ -1,0 +1,21 @@
+検出 passes ファイル数: 632
+[##############################] 100.0%  (632/632)  0021500663: +groups 620, +rows 2693 | elapsed 4951.7s, ETA    0.0s
+スキップ内訳: {}
+
+=== Passing-Probability モデル（全試合・候補経路｜全採用=BH&受け手必須） ===
+総サンプル（候補行） : 1570986  （= 各パスの候補人数ぶん合算）
+グループ数（総パス） : 370989
+分割: train=185494 groups / test=185495 groups
+
+--- 係数（y = c0 + c1*dist + c2*n_def + c3*avg_def + c4*min_def） ---
+  c0=0.422, c1=-0.011, c2=-0.015, c3=-0.012, c4=0.017
+
+--- R^2（候補レベル） ---
+  Train R^2 = 0.241
+  Test  R^2 = 0.241
+
+--- Top-k（受け手=Top-k内｜可変人数対応） ---
+[Train] Top-1: 138559/185494 (74.7%) | Top-2: 170764/185494 (92.1%) | Top-3: 181301/185494 (97.7%)
+[Test ] Top-1: 138347/185495 (74.6%) | Top-2: 170569/185495 (92.0%) | Top-3: 181087/185495 (97.6%)
+
+[保存] C:\Users\nocch\Rits_ISE\senior\NBA-Player-Movements\data\passing_prob_models\pp_lr_ols.candidate_paths.ALL_fulltake.json
